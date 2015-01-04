@@ -1,0 +1,104 @@
+.window {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.window .window-header {
+  background: transparent;
+  padding: 0 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.42857143px;
+}
+
+.window .window-body {
+  border: 0;
+  padding: 15px;
+}
+
+.window .window-body-noheader {
+  border-top-width: 1px;
+}
+
+.window .panel-body-nobottom {
+  border-bottom-width: 0;
+}
+
+.window .window-header .panel-icon,
+.window .window-header .panel-tool {
+  top: 50%;
+  margin-top: -8px;
+}
+
+.window .window-header .panel-icon {
+  left: 12px;
+}
+
+.window .window-header .panel-tool {
+  right: 12px;
+}
+
+.window .window-header .panel-with-icon {
+  padding-left: 18px;
+}
+
+.window-proxy {
+  position: absolute;
+  overflow: hidden;
+}
+
+.window-proxy-mask {
+  position: absolute;
+  filter: alpha(opacity=5);
+  opacity: 0.05;
+}
+
+.window-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=40);
+  opacity: 0.40;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+.window,
+.window-shadow {
+  position: absolute;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.window-shadow {
+  background: #eee;
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.window,
+.window .window-body {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.window {
+  background-color: #ffffff;
+}
+
+.window-proxy {
+  border: 1px dashed #dcdcdc;
+}
+
+.window-proxy-mask,
+.window-mask {
+  background: #eee;
+}
+
+.window .panel-footer {
+  position: relative;
+  padding: 15px;
+  border-top: 1px solid #e5e5e5;
+}
