@@ -71,6 +71,14 @@ module.exports = function (grunt) {
                         src: [
                             'themes/icons/*'
                         ]
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.app %>',
+                        dest: '<%= yeoman.dist %>/themes/default',
+                        src: [
+                            'images/*'
+                        ]
                     }
                 ]
             }
