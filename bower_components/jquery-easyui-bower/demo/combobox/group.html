@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Group ComboBox - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../bower_components/jquery-easyui-bower/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../../bower_components/jquery-easyui-bower/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui-ext.js"></script>
+</head>
+<body>
+	<h2>Group ComboBox</h2>
+	<p>This example shows how to display combobox items in groups.</p>
+	<div style="margin:20px 0"></div>
+	
+	<input class="easyui-combobox" name="browser" style="width:280px;" data-options="
+				url: 'combobox_data2.json',
+				method: 'get',
+				valueField:'value',
+				textField:'text',
+				groupField:'group'
+			">
+
+</body>
+</html>

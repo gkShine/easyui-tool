@@ -1,0 +1,22 @@
+{
+  "name": "easyui-tool",
+  "version": "0.0.1",
+  "authors": [
+    "林盛 <linren_888@126.com>"
+  ],
+  "main": [
+    "gokuai",
+    "jquery.easyui-ext.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-easyui-bower": "*"
+  }
+}
