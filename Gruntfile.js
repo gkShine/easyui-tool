@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var appConfig = {
-        dist: './dist',
+        dist: './dist/gokuai',
         app: './default'
     };
 
@@ -27,14 +27,14 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: '<%= yeoman.app %>/',
                 src: ['*.css', '!easyui-all.css'],
-                dest: './dist/themes/default/',
+                dest: '<%= yeoman.dist %>/themes/default/',
                 ext: '.min.css'
             }
         },
         uglify: {
             js: {
                 src: './jquery.easyui-ext.js',
-                dest: './dist/jquery.easyui-ext.min.js'
+                dest: '<%= yeoman.dist %>/jquery.easyui-ext.min.js'
             }
         },
         clean: {
@@ -42,7 +42,11 @@ module.exports = function (grunt) {
                 files: [{
                     dot: true,
                     src: [
-                        '<%= yeoman.dist %>',
+                        '<%= yeoman.dist %>/locale',
+                        '<%= yeoman.dist %>/plugins',
+                        '<%= yeoman.dist %>/themes',
+                        '<%= yeoman.dist %>/*.js',
+                        '<%= yeoman.dist %>/licence_gpl.txt',
                         '<%= yeoman.app %>/easyui.css'
                     ]
                 }]
