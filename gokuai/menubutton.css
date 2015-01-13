@@ -2,12 +2,12 @@
 .s-btn-downarrow {
   display: inline-block;
   position: absolute;
-  width: 16px;
-  height: 16px;
-  font-size: 1px;
-  right: 0;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  right: 4px;
   top: 50%;
-  margin-top: -8px;
+  margin-top: -2px;
 }
 
 .m-btn-active,
@@ -95,11 +95,6 @@
 
 .m-btn-large .l-btn-icon-bottom .l-btn-text {
   margin-bottom: 50px;
-}
-
-.m-btn-downarrow,
-.s-btn-downarrow {
-  background: url('images/menu_arrows.png') no-repeat 0 center;
 }
 
 .m-btn-plain-active,
