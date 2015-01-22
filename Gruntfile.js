@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         yeoman: appConfig,
         concat: {
             css: {
-                src: ['<%= yeoman.app %>/common.css', '<%= yeoman.app %>/panel.css', '<%= yeoman.app %>/accordion.css', '<%= yeoman.app %>/window.css', '<%= yeoman.app %>/dialog.css',
+                src: ['<%= yeoman.app %>/common.css', '<%= yeoman.app %>/icon.css', '<%= yeoman.app %>/panel.css', '<%= yeoman.app %>/accordion.css', '<%= yeoman.app %>/window.css', '<%= yeoman.app %>/dialog.css',
                     '<%= yeoman.app %>/linkbutton.css', '<%= yeoman.app %>/textbox.css', '<%= yeoman.app %>/filebox.css', '<%= yeoman.app %>/combo.css', '<%= yeoman.app %>/combobox.css',
                     '<%= yeoman.app %>/layout.css', '<%= yeoman.app %>/tabs.css', '<%= yeoman.app %>/datagrid.css', '<%= yeoman.app %>/propertygrid.css', '<%= yeoman.app %>/pagination.css',
                     '<%= yeoman.app %>/calendar.css', '<%= yeoman.app %>/datebox.css', '<%= yeoman.app %>/numberbox.css', '<%= yeoman.app %>/spinner.css', '<%= yeoman.app %>/progressbar.css',
@@ -62,7 +62,6 @@ module.exports = function (grunt) {
                         src: [
                             'locale/*',
                             'plugins/*',
-                            'themes/*.css',
                             'easyloader.js',
                             'jquery.easyui.min.js',
                             'licence_gpl.txt'
@@ -70,18 +69,11 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        cwd: './bower_components/jquery-easyui-bower',
-                        dest: '<%= yeoman.dist %>',
-                        src: [
-                            'themes/icons/*'
-                        ]
-                    },
-                    {
-                        expand: true,
                         cwd: '<%= yeoman.app %>',
                         dest: '<%= yeoman.dist %>/themes/default',
                         src: [
-                            'images/*'
+                            'images/*',
+                            'icons/*'
                         ]
                     }
                 ]
