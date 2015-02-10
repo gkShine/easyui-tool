@@ -313,3 +313,14 @@
     -webkit-border-radius: 0 0 0 0;
     border-radius: 0 0 0 0;
 }
+
+.datagrid-empty {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
+    width: 100%;
+    line-height: 40px;
+    color: #999;
+}
