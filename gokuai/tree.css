@@ -191,3 +191,8 @@
   background: #50acf3;
   color: #fff;
 }
+
+.tree-s .tree-node {
+    height: 30px;
+    padding-top: 6px;
+}

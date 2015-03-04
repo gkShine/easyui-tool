@@ -324,3 +324,10 @@
     line-height: 40px;
     color: #999;
 }
+
+.datagrid-s .datagrid-cell,
+.datagrid-s .datagrid-cell-group,
+.datagrid-s .datagrid-header-rownumber,
+.datagrid-s .datagrid-cell-rownumber {
+    padding: 5px 15px;
+}
