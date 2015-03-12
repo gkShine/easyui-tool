@@ -29,6 +29,10 @@
   border-radius: 3px;
 }
 
+.textbox .textbox-text:disabled {
+    background: #f8f8f8;
+}
+
 .textbox .textbox-prompt {
   font-size: 14px;
   color: #aaa;
