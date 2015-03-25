@@ -15,19 +15,23 @@
 	<p>In a button group only one button can be selected.</p>
 	<div style="margin:10px 0 40px 0;"></div>
 	<div class="easyui-panel" style="padding:5px;">
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g1'">Button 1</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g1',selected:true">Button 2</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g1'">Button 3</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g1'">Button 4</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g1'">Button 5</a>
+        <div class="easyui-button-group">
+            <a href="#" >Button 1</a>
+            <a href="#" data-options="selected:true">Button 2</a>
+            <a href="#" >Button 3</a>
+            <a href="#" >Button 4</a>
+            <a href="#" >Button 5</a>
+        </div>
 	</div>
 	<div style="margin:20px 0;"></div>
-	<div class="easyui-panel" style="padding:5px;">
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g2',plain:true">Button 1</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g2',plain:true,selected:true">Button 2</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g2',plain:true">Button 3</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g2',plain:true">Button 4</a>
-		<a href="#" class="easyui-linkbutton" data-options="toggle:true,group:'g2',plain:true">Button 5</a>
+	<div class="easyui-panel l-btn-group" style="padding:5px;">
+        <div class="easyui-button-group">
+            <a href="#" data-options="plain:true">Button 1</a>
+            <a href="#" data-options="plain:true,selected:true">Button 2</a>
+            <a href="#" data-options="plain:true">Button 3</a>
+            <a href="#" data-options="plain:true">Button 4</a>
+            <a href="#" data-options="plain:true">Button 5</a>
+        </div>
 	</div>
 
 </body>

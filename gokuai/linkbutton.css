@@ -220,15 +220,43 @@
 .l-btn-selected,
 .l-btn-selected:hover {
   outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   filter: none;
   background-color: #e6e6e6;
   border-color: #b4b4b4;
+  position: relative;
 }
 
 .l-btn-plain-selected,
 .l-btn-plain-selected:hover {
   background: #e6e6e6;
+}
+
+.l-btn-group {
+    overflow: hidden;
+    padding-left: 1px;
+}
+
+.l-btn-group .l-btn {
+    float: left;
+    margin-left: -1px;
+    outline: 0;
+}
+
+.l-btn-group .l-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.l-btn-group .l-btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.l-btn-group .l-btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.l-btn-group .l-btn-plain {
+    float: none;
+    border-radius: 0;
 }
