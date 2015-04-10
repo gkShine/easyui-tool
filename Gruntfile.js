@@ -64,6 +64,8 @@ module.exports = function (grunt) {
                             'plugins/*',
                             'easyloader.js',
                             'jquery.easyui.min.js',
+                            'jquery.min.js',
+                            'jquery.easyui.mobile.js',
                             'licence_gpl.txt'
                         ]
                     },

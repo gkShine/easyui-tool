@@ -3,12 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Remote JSONP - jQuery EasyUI Demo</title>
-
-	<link rel="stylesheet" type="text/css" href="../../default/easyui-all.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="../demo.css">
-	<script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="../../bower_components/jquery-easyui-bower/jquery.easyui.min.js"></script>
-	<script type="text/javascript" src="../../jquery.easyui-ext.js"></script>
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
 </head>
 <body>
 	<h2>Remote JSONP</h2>
@@ -23,21 +22,18 @@
 	<script>
 		var myloader = function(param,success,error){
 			var q = param.q || '';
-			if (q.length <= 1){return false}
+			if (q.length <= 2){return false}
 			$.ajax({
-				url: 'http://ws.geonames.org/searchJSON',
+				url: 'http://gd.geobytes.com/AutoCompleteCity',
 				dataType: 'jsonp',
                 data: {
-                    featureClass: "P",
-                    style: "full",
-                    maxRows: 20,
-                    name_startsWith: q
+                    q: q
                 },
 				success: function(data){
-					var items = $.map(data.geonames, function(item){
+					var items = $.map(data, function(item,index){
 						return {
-							id: item.geonameId,
-							name: item.name + (item.adminName1 ? ', ' + item.adminName1 : '') + ', ' + item.countryName
+							id: index,
+							name: item
 						};
 					});
 					success(items);

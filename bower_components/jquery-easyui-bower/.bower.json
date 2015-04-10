@@ -10,17 +10,17 @@
   "main": "jquery.easyui.min.js",
   "keywords": [
     "easyui",
-    "1.4.1"
+    "1.4.2"
   ],
   "license": "GPL",
   "homepage": "https://github.com/waylau/jquery-easyui",
-  "_release": "3534ae9e92",
+  "_release": "c73c3895cd",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "3534ae9e92dce0a888921b203e46db144267e289"
+    "commit": "c73c3895cd82071e109bd0fe82bf64e4da160e3e"
   },
-  "_source": "git://github.com/waylau/jquery-easyui.git",
+  "_source": "https://github.com/waylau/jquery-easyui.git",
   "_target": "*",
   "_originalSource": "jquery-easyui-bower",
   "_direct": true
