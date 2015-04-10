@@ -17,6 +17,16 @@
             });
         });
     };
+    //修改空数据样式
+    $.fn.datagrid.defaults.view.renderEmptyRow = function (target) {
+        var data = $.data(target, 'datagrid');
+        if (data.dc.empty) {
+            data.dc.body2.append(data.dc.empty);
+        } else {
+            data.dc.empty = $('<div class="datagrid-empty">' + data.options.empty + '</div>')
+                .css('margin-top', data.dc.header2.height());
+        }
+    };
 })(jQuery);
 $(function () {
     $('.easyui-button-group').buttonGroup();
