@@ -23,7 +23,7 @@
         if (data.dc.empty) {
             data.dc.body2.append(data.dc.empty);
         } else {
-            data.dc.empty = $('<div class="datagrid-empty">' + data.options.empty + '</div>')
+            data.dc.empty = $('<div class="datagrid-empty">' + (data.options.empty || '') + '</div>')
                 .css('margin-top', data.dc.header2.height());
         }
     };
