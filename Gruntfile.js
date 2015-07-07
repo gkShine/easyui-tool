@@ -18,7 +18,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/layout.css', '<%= yeoman.app %>/tabs.css', '<%= yeoman.app %>/datagrid.css', '<%= yeoman.app %>/propertygrid.css', '<%= yeoman.app %>/pagination.css',
                     '<%= yeoman.app %>/calendar.css', '<%= yeoman.app %>/datebox.css', '<%= yeoman.app %>/numberbox.css', '<%= yeoman.app %>/spinner.css', '<%= yeoman.app %>/progressbar.css',
                     '<%= yeoman.app %>/searchbox.css', '<%= yeoman.app %>/slider.css', '<%= yeoman.app %>/menu.css', '<%= yeoman.app %>/menubutton.css', '<%= yeoman.app %>/splitbutton.css',
-                    '<%= yeoman.app %>/messager.css', '<%= yeoman.app %>/tree.css', '<%= yeoman.app %>/validatebox.css', '<%= yeoman.app %>/tooltip.css'],
+                    '<%= yeoman.app %>/messager.css', '<%= yeoman.app %>/tree.css', '<%= yeoman.app %>/validatebox.css', '<%= yeoman.app %>/tooltip.css', '<%= yeoman.app %>/switchbutton.css'],
                 dest: '<%= yeoman.app %>/easyui.css'
             }
         },
