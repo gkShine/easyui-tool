@@ -3,7 +3,7 @@
         'datetimebox', 'datetimespinner', 'numberbox', 'numberspinner', 'timespinner'];
     for (var i in boxes) {
         $.fn[boxes[i]].defaults.height = 34;
-        if ($.fn[boxes[i]].defaults) {
+        if ($.fn[boxes[i]].defaults && boxes[i].indexOf('spinner') == -1) {
             $.fn[boxes[i]].defaults.iconWidth = 24;
         }
     }
