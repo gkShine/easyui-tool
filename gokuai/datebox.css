@@ -42,3 +42,7 @@
 .datebox-button a {
   color: #777;
 }
+
+.datebox .textbox-text {
+    padding-right: 2px;
+}
