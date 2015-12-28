@@ -5,7 +5,8 @@
 
 .messager-button {
   text-align: center;
-  padding: 5px;
+  padding: 15px;
+  border-top-color: transparent;
 }
 
 .messager-button .l-btn {
