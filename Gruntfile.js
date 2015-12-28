@@ -80,6 +80,20 @@ module.exports = function (grunt) {
                     }
                 ]
             }
+        },
+        connect: {
+            options: {
+                port: 7000,
+                hostname: '0.0.0.0',
+                keepalive: true
+            },
+
+            server: {
+                options: {
+                    open: true,
+                    base: ['./']
+                }
+            }
         }
     });
 
@@ -89,5 +103,9 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist'
+    ]);
+
+    grunt.registerTask('serve', [
+        'connect:server'
     ]);
 };
