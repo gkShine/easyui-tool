@@ -9,6 +9,10 @@
     }
     $.fn.tabs.defaults.tabHeight = 38;
     $.fn.datebox.defaults.panelWidth = $.fn.datetimebox.defaults.panelWidth = 210;
+    //去默认验证文本框的出错tooltip
+    $.fn.validatebox.defaults.tipOptions.onShow = function () {
+        $(this).tooltip('tip').addClass('validate-tooltip');
+    };
     //新增按钮组插件
     $.fn.buttonGroup = function (options) {
         $(this).each(function (i) {

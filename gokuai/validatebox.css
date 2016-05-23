@@ -3,3 +3,8 @@
   /*background-color: #fff3f3;*/
   color: #3f4754;
 }
+.validate-tooltip {
+  color: #000;
+  border-color: #CC9933;
+  background-color: #FFFFCC;
+}
