@@ -9,6 +9,8 @@
     }
     $.fn.tabs.defaults.tabHeight = 38;
     $.fn.datebox.defaults.panelWidth = $.fn.datetimebox.defaults.panelWidth = 210;
+    $.fn.switchbutton.defaults.height = 32;
+    $.fn.switchbutton.defaults.width = 85;
     //去默认验证文本框的出错tooltip
     $.fn.validatebox.defaults.tipOptions.onShow = function () {
         $(this).tooltip('tip').addClass('validate-tooltip');
